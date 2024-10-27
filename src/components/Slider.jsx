@@ -48,7 +48,7 @@ function Slider({ images }) {
   return (
     <div className='bg-purple-400 relative w-[50%] sm:w-full md:w-full h-80 sm:h-60 overflow-hidden rounded-2xl mt-5 z-0'>
       <div className='w-full border-2 border-black z-20 grid place-items-center absolute h-full'>
-          <img src={Logo} alt="" className='z-30 h-96 w-96'/>
+          <img src={Logo} alt="" className='z-30 h-96 w-96 sm:h-72 sm:w-72'/>
         </div>
       <div
         className='absolute inset-0 flex transition-transform duration-1000 ease-in-out'

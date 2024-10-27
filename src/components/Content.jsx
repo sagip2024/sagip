@@ -36,15 +36,15 @@ function Macronutrients({
     setDownloadables(!downloadables);
   };
 
-  const handleDownload = (filePath, pdfName) => {
+  const handleDownload = (filePath, fileName) => {
     const link = document.createElement('a');
     link.href = filePath; 
-    link.download = pdfName;
+    link.download = fileName;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
     
-    console.log(`Download initiated for PDF: ${pdfName}`);
+    console.log(`Download initiated for PDF: ${fileName}`);
   };
 
   const handleDownloadVideo = async (video) => {
@@ -105,10 +105,10 @@ function Macronutrients({
   }, [storage]);
 
   return (
-    <div id={id} className="mt-10 h-[100vh]">
+    <div id={id} className="mt-10 py-10">
       <div>
         
-      <div className="border-2 border-[#473664] w-[50%] rounded-e-3xl bg-pink-300 flex justify-center py-1">
+      <div className="border-2 border-[#473664] w-[50%] sm:w-[80%] rounded-e-3xl bg-pink-300 flex justify-center py-1">
       <span
         className="font-bobby text-[3rem] font-bold text-[#DE638A] tracking-wide"
         style={{
@@ -140,17 +140,18 @@ function Macronutrients({
           )}
 
           {toggle1 && (
-            <div className="grid w-full place-items-center">
+            <div className="w-full">
               <div 
                 onClick={toggleHandler}
-                className="grid place-items-center gap-10 mt-5 bg-[#FFF1B4] w-[50%] rounded-full py-2 cursor-pointer relative"
+                className="relative gap-10 mt-5 bg-[#FFF1B4] w-[50%] sm:w-full mx-auto rounded-full py-2 cursor-pointer"
+                style={{ margin: '0 auto' }}
               >
-                <img src={Icon} alt="PDF Icon" className='absolute w-24 left-6 mt-5' />
-                <span className="font-bold font-bobby text-[#473664]">PDF VIEW/DOWNLOAD OF {title} HERE</span>
+                <img src={Icon} alt="PDF Icon" className='absolute w-24 left-5 top-1/2 transform -translate-y-1/2 sm:left-0 ' />
+                <span className="font-bold font-bobby text-[#473664] block text-center indent-10">PDF VIEW/DOWNLOAD OF {title} HERE</span>
               </div>
 
               {toggle && (
-                <div className="dropdown-content bg-white shadow-md rounded mt-2 w-[50%] relative z-10">
+                <div className="dropdown-content bg-white shadow-md rounded mt-2 w-[50%] mx-auto relative z-10" style={{ margin: '0 auto' }}>
                   <ul className="divide-y">
                     <li 
                       className="py-2 px-4 hover:bg-[#FFF1B4] cursor-pointer"
@@ -174,10 +175,10 @@ function Macronutrients({
             <div className="grid w-full place-items-center">
               <div 
                 onClick={toggleDownloadablesHandler}
-                className="grid place-items-center gap-10 mt-5 bg-[#FFF1B4] w-[50%] rounded-full py-2 cursor-pointer relative"
+                className="grid place-items-center gap-10 mt-5 bg-[#FFF1B4] w-[50%] rounded-full py-2 cursor-pointer relative sm:w-full"
               >
                 <img src={Icon} alt="Icon" className='absolute w-24 left-6 mt-5' />
-                <span className="font-bold">DOWNLOADABLES FOR {title} HERE</span>
+                <span className="font-bold font-bobby text-[#473664] block text-center indent-10">DOWNLOADABLES FOR {title} HERE</span>
               </div>
 
               {downloadables && (

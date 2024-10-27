@@ -22,7 +22,7 @@ function Homepage() {
 
   return (
     <>
-      <div id="/" className="z-20 relative grid sm:place-items-center md:place-items-center mb-24 bg-red-100">
+      <div id="/" className="z-20 relative grid sm:place-items-center md:place-items-center mb-24 bg-red-100 py-20">
         <div className='flex justify-center items-center sm:w-[80%] md:w-[80%]'>
           <Slider 
             images={arrayImg}
@@ -31,7 +31,7 @@ function Homepage() {
         <div className="text-center my-4">
           <span>Description: </span>
         </div>
-        <div className="mt-5 grid grid-cols-3 sm:grid-cols-2 gap-x-24 gap-y-10 justify-center items-center mx-auto">
+        <div className="mt-5 grid grid-cols-3 sm:grid-cols-2 gap-x-24 sm:gap-x-12 gap-y-10 justify-center items-center mx-auto">
           <Icons 
             bgColor="bg-[#F6A2BB]"
             borderColor="border-[#DE638A]"

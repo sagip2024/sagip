@@ -10,22 +10,22 @@ function Contents() {
         <img 
         src={Icon7} 
         alt="" 
-        className="fixed top-0 left-0 z-0 mt-[10%] w-96 drop-shadow-2xl animate-mini-bounce" 
+        className="fixed top-0 left-0 z-0 mt-[10%] w-96 drop-shadow-2xl animate-mini-bounce sm:hidden md:hidden" 
         />
         <img 
         src={Icon9} 
         alt="" 
-        className="fixed top-0 right-10 z-0 mt-[-2%] w-96 mr-[-5%] drop-shadow-2xl animate-mini-bounce" 
+        className="fixed top-0 right-10 z-0 mt-[-2%] w-96 mr-[-5%] drop-shadow-2xl animate-mini-bounce sm:hidden md:hidden" 
         />
         <img 
         src={Icon8} 
         alt="" 
-        className="fixed bottom-0 z-0 w-96 drop-shadow-2xl animate-mini-bounce" 
+        className="fixed bottom-0 z-0 w-96 drop-shadow-2xl animate-mini-bounce sm:hidden md:hidden" 
         />
         <img 
         src={Icon10} 
         alt="" 
-        className="fixed bottom-20 z-0 right-0 w-96 drop-shadow-2xl animate-mini-bounce" 
+        className="fixed bottom-20 z-0 right-0 w-96 drop-shadow-2xl animate-mini-bounce sm:hidden md:hidden" 
         />
       <div className="relative z-10 bg-white bg-opacity-0">
         <Content 
