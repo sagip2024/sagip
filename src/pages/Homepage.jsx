@@ -80,7 +80,7 @@ function Homepage() {
         title="Macronutrients"
         description1="DESCRIPTION1"
         description2="DESCRIPTION2"
-        filePath="/files/files/pdf/Kabanata_1_Macronutrients.pdf"
+        filePath="/files/pdf/Kabanata_1_Macronutrients.pdf"
         fileName="Kabanata_1_Macronutrients.pdf"
         videoIndex={1}
         link="/files/files/pdf/Kabanata_1_Macronutrients.pdf"
@@ -110,7 +110,7 @@ function Homepage() {
         title="Nutrition Recommendation"
         description1="DESCRIPTION"
         description2="DESCRIPTION"
-        filePath="/files/files/pdf/"
+        filePath="/files/pdf/"
         videoIndex={3}
         fileName="Kabanata_3_Nutritional_Recommendation.pdf"
         link="https://firebasestorage.googleapis.com/v0/b/sagip-a7258.appspot.com/o/pdfs%2FKabanata%203_%20Nutritional%20Recommendation.pdf?alt=media&token=109a63f7-c286-4115-85e8-7b5401b898b4"
@@ -125,7 +125,7 @@ function Homepage() {
         title="Food Supplement"
         description1="DESCRIPTION"
         description2="DESCRIPTION"
-        filePath="/files/files/pdf/"
+        filePath="/files/pdf/"
         videoIndex={0}
         fileName="Kabanata_4_Food_Supplement.pdf"
         link="https://firebasestorage.googleapis.com/v0/b/sagip-a7258.appspot.com/o/pdfs%2FKabanata%204_%20Food%20Supplement.pdf?alt=media&token=a9f8e4fa-d417-49b2-9b9e-6d01d1240f7b"
@@ -140,7 +140,7 @@ function Homepage() {
         title="Food Safety"
         description1="DESCRIPTION"
         description2="DESCRIPTION"
-        filePath="/files/files/pdf/"
+        filePath="/files/pdf/"
         videoIndex={0}
         fileName="Kabanata_5_Food_Safety.pdf"
         link="https://firebasestorage.googleapis.com/v0/b/sagip-a7258.appspot.com/o/pdfs%2FKabanata%205_%20Food%20Safety.pdf?alt=media&token=a2cde8cf-1ab5-4a5b-8145-707ff4b62b4a"
@@ -155,7 +155,7 @@ function Homepage() {
         title="Downloadables"
         description1="DESCRIPTION"
         description2="DESCRIPTION"
-        filePath="/files/files/pdf/"
+        filePath="/files/pdf/"
         videoIndex={0}
         fileName="Kabanata_5_Food_Safety.pdf"
         link="https://firebasestorage.googleapis.com/v0/b/sagip-a7258.appspot.com/o/pdfs%2FKabanata%205_%20Food%20Safety.pdf?alt=media&token=a2cde8cf-1ab5-4a5b-8145-707ff4b62b4a"
