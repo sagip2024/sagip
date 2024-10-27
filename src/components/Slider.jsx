@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-
+import Logo from '../assets/icons/SAGIPTransparent.png'
 function Slider({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [autoSlide, setAutoSlide] = useState(true);
@@ -46,7 +46,10 @@ function Slider({ images }) {
   };
 
   return (
-    <div className='bg-purple-400 relative w-[70%] sm:w-full md:w-full h-80 sm:h-60 overflow-hidden rounded-2xl mt-5 z-0'>
+    <div className='bg-purple-400 relative w-[50%] sm:w-full md:w-full h-80 sm:h-60 overflow-hidden rounded-2xl mt-5 z-0'>
+      <div className='w-full border-2 border-black z-20 grid place-items-center absolute h-full'>
+          <img src={Logo} alt="" className='z-30 h-96 w-96'/>
+        </div>
       <div
         className='absolute inset-0 flex transition-transform duration-1000 ease-in-out'
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -64,18 +67,18 @@ function Slider({ images }) {
 
       <button
         onClick={goToPrevious}
-        className='absolute top-1/2 left-0 transform -translate-y-1/2 text-gray-800 focus:outline-none text-3xl px-5 font-bold'
+        className='absolute top-1/2 left-0 transform -translate-y-1/2 text-gray-800 focus:outline-none text-3xl px-5 font-bold cursor-pointer z-20 hover:scale-125'
       >
         &lt;
       </button>
       
       <button
         onClick={goToNext}
-        className='absolute top-1/2 right-0 transform -translate-y-1/2 text-gray-800 focus:outline-none text-3xl px-5 font-bold'
+        className='absolute top-1/2 right-0 transform -translate-y-1/2 text-gray-800 focus:outline-none text-3xl px-5 font-bold cursor-pointer z-20 hover:scale-125'
       >
         &gt;
       </button>
-      <div className='absolute bottom-0 left-0 right-0 h-52 bg-gradient-to-t from-pink-500 to-transparent pointer-events-none' />
+      <div className='absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-[#F6A2BB] to-transparent pointer-events-none' />
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import NavLinks from './components/NavLinks';
 import Macronutrients from './components/Content';
+import Contents from './pages/Contents';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/macro" element={<Macronutrients />} />
+        <Route path="/contents" element={<Contents />} />
       </Routes>
     </div>
   );
