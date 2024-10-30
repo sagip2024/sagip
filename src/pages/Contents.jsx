@@ -4,6 +4,11 @@ import Icon10 from '../assets/icons/10.png';
 import Icon7 from '../assets/icons/7.png';
 import Icon9 from '../assets/icons/9.png';
 import Icon8 from '../assets/icons/8.png';
+import Macronutrients from './Macronutrients';
+import Micronutrients from './Micronutrients';
+import FoodSafety from './FoodSafety';
+import FoodSupplement from './FoodSupplement';
+import Downloadables from './Downloadables';
 function Contents() {
   return (
     <div className="relative">
@@ -28,22 +33,9 @@ function Contents() {
         className="fixed bottom-20 z-0 right-0 w-96 drop-shadow-2xl animate-mini-bounce sm:hidden md:hidden" 
         />
       <div className="relative z-10 bg-white bg-opacity-0">
-        <Content 
-          title="Macronutrients"
-          description1="DESCRIPTION1"
-          description2="DESCRIPTION2"
-          filePath="/files/pdf/Kabanata_1_Macronutrients.pdf"
-          fileName="Kabanata_1_Macronutrients.pdf"
-          videoIndex={1}
-          link="/files/files/pdf/Kabanata_1_Macronutrients.pdf"
-          pdfName="MACRONUTRIENTS"
-          id="macro"
-          desc1={true}
-          desc2={true}
-          showVideo={true}
-          toggle1={true}
-        />
-        <Content 
+        <Macronutrients />
+        <Micronutrients />
+        {/* <Content 
           title="Micronutrients"
           description1="DESCRIPTION"
           description2="DESCRIPTION"
@@ -57,7 +49,7 @@ function Contents() {
           desc2={true}
           showVideo={true}
           toggle1={true}
-        />
+        /> */}
         <Content 
           title="Nutrition Recommendation"
           description1="DESCRIPTION"
@@ -73,7 +65,7 @@ function Contents() {
           showVideo={true}
           toggle1={true}
         />
-        <Content 
+        {/* <Content 
           title="Food Supplement"
           description1="DESCRIPTION"
           description2="DESCRIPTION"
@@ -87,37 +79,10 @@ function Contents() {
           desc2={true}
           showVideo={true}
           toggle1={true}
-        />
-        <Content 
-          title="Food Safety"
-          description1="DESCRIPTION"
-          description2="DESCRIPTION"
-          filePath="/files/pdf/Kabanata_5_Food_Safety.pdf"
-          videoIndex={0}
-          fileName="Kabanata_5_Food_Safety.pdf"
-          link="https://firebasestorage.googleapis.com/v0/b/sagip-a7258.appspot.com/o/pdfs%2FKabanata%205_%20Food%20Safety.pdf?alt=media&token=a2cde8cf-1ab5-4a5b-8145-707ff4b62b4a"
-          pdfName="FOOD SAFETY"
-          id="foodsafety"
-          desc1={true}
-          desc2={true}
-          showVideo={true}
-          toggle1={true}
-        />
-        <Content 
-          title="Downloadables"
-          description1="DESCRIPTION"
-          description2="DESCRIPTION"
-          filePath="/files/pdf/Kabanata_5_Food_Safety.pdf"
-          videoIndex={0}
-          fileName="Kabanata_5_Food_Safety.pdf"
-          link="https://firebasestorage.googleapis.com/v0/b/sagip-a7258.appspot.com/o/pdfs%2FKabanata%205_%20Food%20Safety.pdf?alt=media&token=a2cde8cf-1ab5-4a5b-8145-707ff4b62b4a"
-          pdfName="FOOD SAFETY"
-          id="foodsafety"
-          desc1={false}
-          desc2={false}
-          showVideo={false}
-          toggle2={true}
-        />
+        /> */}
+        <FoodSupplement />
+        <FoodSafety />
+        <Downloadables />
       </div>
     </div>
   );

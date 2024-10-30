@@ -2,27 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Icon from '../assets/icons/1.png';
 import { getStorage, ref, listAll, getDownloadURL } from 'firebase/storage';
 import firebaseApp from '../../firebaseConfig';
-import { CircularProgressbar } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
 
-function Macronutrients({
-  title,
-  description1,
-  description2,
-  desc1,
-  desc2,
-  id,
-  pdfName,
-  link,
-  filePath,
-  showVideo,
-  toggle2,
-  toggle1,
-  videoIndex,
-  desc1content,
-  videoUrl
-}) {
-  const [toggle, setToggle] = useState(false);
+function Downloadables() {
+    const [toggle, setToggle] = useState(false);
   const [downloadables, setDownloadables] = useState(false);
   const [videos, setVideos] = useState([]);
 
@@ -77,79 +59,36 @@ function Macronutrients({
   }, [storage]);
 
   return (
-    <div id={id} className="mt-10 py-10">
-      <div className="border-2 border-[#473664] w-[50%] sm:w-[90%] rounded-e-3xl bg-pink-300 flex justify-center py-1">
+    <div id="micro" className="mt-10 py-10">
+        <div className="border-2 border-[#473664] w-[50%] sm:w-[90%] rounded-e-3xl bg-pink-300 flex justify-center py-1">
         <span
-          className="font-bobby text-[3rem] sm:text-4xl font-bold text-[#DE638A] tracking-wide"
-          style={{
+            className="font-bobby text-[3rem] sm:text-4xl font-bold text-[#DE638A] tracking-wide"
+            style={{
             textShadow: "2px 2px 0 #473664, -2px 2px 0 #473664, 2px -2px 0 #473664, -2px -2px 0 #473664",
             color: "#DE638A"
-          }}
+            }}
         >
-          {title}
+            DOWNLOADABLES
         </span>
-      </div>
-
-      <div className="flex flex-col justify-center items-center mt-5 gap-y-5">
-        {desc1 && (
-          <div className='w-[50%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
-            <p className='font-bold'>{description1}</p>
-            <p className='indent-10 text-justify'>{desc1content}</p>
-          </div>
-        )}
-
-        {showVideo && videos.length > 0 && (
-          <div className="w-[50%] sm:w-[80%] md:w-[60%] h-72 overflow-hidden rounded-2xl bg-black relative">
-            <video controls className="w-full h-full" src={videos[videoIndex].url}></video>
-          </div>
-        )}
-
-        {desc2 && (
-          <div className='w-[50%] border-2 border-black py-3 px-4 rounded-lg bg-white'>
-            {description2}
-          </div>
-        )}
-
-        {toggle1 && (
-          <div className="w-full">
+        </div>
+        <div className="grid w-full place-items-center mt-5">
             <div 
-              onClick={toggleHandler}
-              className="relative gap-10 mt-5 bg-[#FFF1B4] w-[50%] sm:w-full mx-auto rounded-full py-2 cursor-pointer"
-              style={{ margin: '0 auto' }}
+              className="grid place-items-center gap-10 mt-5 bg-[#FFF1B4] w-[50%] rounded-full py-2 cursor-pointer relative sm:w-full"
             >
-              <img src={Icon} alt="PDF Icon" className='absolute w-24 left-5 top-1/2 transform -translate-y-1/2 sm:hidden' />
-              <span className="font-bold font-bobby text-[#473664] block text-center">PDF VIEW/DOWNLOAD OF {title} HERE</span>
+              <img src={Icon} alt="Icon" className='absolute w-24 left-6 mt-5 sm:hidden' />
+              <span 
+              className="font-bold font-bobby text-[#473664] block text-center"
+              onClick={() => handleDownload("/files/pdf/SAGIP_Maternal_Nutrition_Modules.pdf", "MATERNAL_NUTRITION_MODULES")} 
+              >IDOWNLOAD ANG KABUUANG MODULE</span>
             </div>
-
-            {toggle && (
-              <div className="dropdown-content bg-white shadow-md rounded mt-2 w-[50%] mx-auto relative z-10" style={{ margin: '0 auto' }}>
-                <ul className="divide-y">
-                  <li 
-                    className="py-2 px-4 hover:bg-[#FFF1B4] cursor-pointer"
-                    onClick={() => handleDownload(filePath, pdfName)} 
-                  >
-                    Download PDF
-                  </li>
-                  <li 
-                    className="py-2 px-4 hover:bg-[#FFF1B4] cursor-pointer" 
-                    onClick={() => handleView(link)}
-                  >
-                    View PDF
-                  </li>
-                </ul>
-              </div>
-            )}
-          </div>
-        )}
-
-        {toggle2 && (
-          <div className="grid w-full place-items-center">
+        </div>
+        <div className="grid w-full place-items-center mt-10">
             <div 
               onClick={toggleDownloadablesHandler}
               className="grid place-items-center gap-10 mt-5 bg-[#FFF1B4] w-[50%] rounded-full py-2 cursor-pointer relative sm:w-full"
             >
               <img src={Icon} alt="Icon" className='absolute w-24 left-6 mt-5 sm:hidden' />
-              <span className="font-bold font-bobby text-[#473664] block text-center ">DOWNLOADABLES FOR {title} HERE</span>
+              <span className="font-bold font-bobby text-[#473664] block text-center ">DOWNLOADABLES VIDEOS HERE</span>
             </div>
 
             {downloadables && (
@@ -183,10 +122,8 @@ function Macronutrients({
               </div>
             )}
           </div>
-        )}
-      </div>
-    </div>
-  );
+        </div>
+  )
 }
 
-export default Macronutrients;
+export default Downloadables
