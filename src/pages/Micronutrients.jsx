@@ -60,14 +60,14 @@ function Micronutrients() {
       </div>
 
       <div className="flex flex-col justify-center items-center mt-5 gap-y-5">
-          <div className='w-[50%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+          <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>Micronutrients: Nutrisyon para sa Pag-asenso ng Iba’t ibang Proseso</p>
             <p className='indent-10 text-justify'>
             Ang <i>micronutrients</i> ay isa pang grupo ng mga sustansya na kinakailangan ng mga nagbubuntis upang makamit ang pagunlad ng kalusugan ng ina at nang kanyang sanggol. Ang grupong ito ay binubuo ng iba’t ibang bitamina at mineral kung saan nakakatulong ang mga ito sa pang-araw-araw na proseso na nagaganap sa katawan. Bagamat ang <i>macronutrients</i> ay kinakailangan ng malaking bilang ng pagkonsumo, ang <i>micronutrients</i> naman ay para sa kaunting bilang lamang. Dagdag pa dito, malaki ang tungkulin ng <i>micronutrients</i> bagkus inihahanda ng mga ito ang katawan ng isang ina sa pagbubuntis pati narin sa pangangana  atma siguradong  malusog ang sanggol sa sinapupunan. 
             </p>
           </div>
 
-          <div className="w-[50%] sm:w-[80%] md:w-[60%] h-72 overflow-hidden rounded-2xl bg-black relative">
+          <div className="w-[60%] sm:w-[80%] md:w-[60%] h-72 overflow-hidden rounded-2xl bg-black relative">
             {videos[2] && (
             <div className="w-full h-72 overflow-hidden rounded-2xl bg-black relative">
                 <video controls className="w-full h-full" src={videos[2].url}></video>
@@ -75,7 +75,7 @@ function Micronutrients() {
             )}
         </div>
 
-        <div className='w-[50%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+        <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>Importansya ng Iron-Folic Acid - IFA</p>
             <span className='text-justify'>
             <p className='indent-10'>Ang <i>iron</i> at <i>folic acid</i> ang dalawang primaryang bitamina na inrerekomenda ng mga eksperto na inumin ng mga ina sa pang araw-araw habang sila ay nagbubuntis. Dagdapa dito ay kabilang sila sa mga supplementasyon na maaaring mabili sa mga botika, kadalasan ang sa kanila ay <i>iron-folic acid supplements</i> o IFAs.</p>
@@ -94,14 +94,14 @@ function Micronutrients() {
             </span>
           </div>
 
-          <div className='w-[50%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+          <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>Inirerekomendang Dami ng Iron at Folic-Acid</p>
             <p className='indent-10 text-justify'>
             Ang isang ina na nagbubuntis ay nangangailangan kumonsumo ng <i>iron</i> 31.7mg habang ang <i>folate (folic acid)</i> namin ay 530mcg. Bukod sa <i>supplements</i>, maaaring matagpuan ang dalawang <i>micronutrients</i> na ito sa mga pang-araw-araw na pagkain. 
             </p>
           </div>
 
-          <div className='w-[50%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+          <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>Iron-Folic Acid: Rekomendasyon Pagkain kada Trimester</p>
             <p className='indent-10 text-justify'>
             Mga buntis sa unang trimester - 20 mg kada araw
@@ -110,7 +110,7 @@ function Micronutrients() {
             </p>
           </div>
 
-        <div className='w-[50%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+        <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>Mga Pagkain na Mayaman sa Iron at Folic Acid</p>
             <p className='indent-10 text-justify'>
                 Ang <i>micronutrients</i> ay madalas na makukuha sa mga gulay, prutas, at mga parte ng karne at manok. Makikita sa talahanayan sa ibaba ang ilang halimbawa ng mga pagkain na mayaman sa <i>iron</i> at <i>folate</i>.
@@ -133,7 +133,7 @@ function Micronutrients() {
             </ol>
         </div>
 
-        <div className='w-[50%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+        <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>Iba’t ibang Bitamina at Minerals na Inirerekomenda sa mga Buntis</p>
             <h1 className='font-bold'>Calcium</h1>
             <p className='indent-10 text-justify'>
@@ -156,7 +156,7 @@ function Micronutrients() {
           <div className="w-full mt-5">
             <div 
               onClick={toggleHandler}
-              className="relative gap-10 mt-5 bg-[#FFF1B4] w-[50%] sm:w-full mx-auto rounded-full py-2 cursor-pointer"
+              className="relative gap-10 mt-5 bg-[#FFF1B4] w-[60%] sm:w-[80%] mx-auto rounded-full py-2 cursor-pointer"
               style={{ margin: '0 auto' }}
             >
               <img src={Icon} alt="PDF Icon" className='absolute w-24 left-5 top-1/2 transform -translate-y-1/2 sm:hidden' />
@@ -164,8 +164,8 @@ function Micronutrients() {
             </div>
 
             {toggle && (
-              <div className="dropdown-content bg-white shadow-md rounded mt-2 w-[50%] mx-auto relative z-10" style={{ margin: '0 auto' }}>
-                <ul className="divide-y mt-2">
+              <div className="dropdown-content bg-white shadow-md rounded mt-2 w-[60%] mx-auto relative z-10" style={{ margin: '0 auto' }}>
+                <ul className="divide-y mt-2 grid gap-y-4">
                   <li 
                     className="py-2 px-4 hover:bg-[#FFF1B4] cursor-pointer"
                     onClick={() => handleDownload("/files/pdf/Kabanata_2_Micronutrients.pdf", "MICRONUTRIENTS")} 

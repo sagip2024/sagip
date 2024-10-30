@@ -60,14 +60,14 @@ function Macronutrients() {
       </div>
 
       <div className="flex flex-col justify-center items-center mt-5 gap-y-5">
-          <div className='w-[50%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+          <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>Macronutrients: Mga Sustanya para sa Ligtas na Pagbubuntis!</p>
             <p className='indent-10 text-justify'>
             Sapat na sustansya at nutrisyon ay isa sa mga pinakamahalagang pangangailangan ng isang ina na nagdadalang tao ng kanyang ina. Sa pamamagitan ng pagkonsumo ng sapat na dami ng sustansya, naiiwasan ang pagkakaroon ng komplikasyon habang nagbubuntis. Ang <i>macronutrients</i> ay iilan lamang sa mga pagkain na nagtataglay ng sustansya na kinakailangan ng isang ina. Ang macronutrients ay binubuo ng <i>glucose, protein, fatty acid</i> at <i>iron</i>. Makukuha ang mga nasabing sustansya sa iba’t ibang pagkain, kung saan rinerekomenda na makamit aang tamang dami ng bawat sustanya upang mapanatiling malusog ang kalusugan ng isang ina at ng sanggol. Kung kaya’t mayroon tayong mga dokor, nars, at <i>nutritionists</i> upang magbigay ng gabay sa mga nagbubuntis.
             </p>
           </div>
 
-          <div className="w-[50%] sm:w-[80%] md:w-[60%] h-72 overflow-hidden rounded-2xl bg-black relative">
+          <div className="w-[60%] sm:w-[80%] md:w-[60%] h-72 overflow-hidden rounded-2xl bg-black relative">
             {videos[1] && (
             <div className="w-full h-72 overflow-hidden rounded-2xl bg-black relative">
                 <video controls className="w-full h-full" src={videos[1].url}></video>
@@ -75,7 +75,7 @@ function Macronutrients() {
             )}
         </div>
 
-        <div className='w-[50%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+        <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>Macronutrients: Glukosa para sa Katawang Masigla</p>
             <p className='indent-10 text-justify'>
             Kinakailangan ng isang nagbubuntis ang sapat na enerhiya at pangangatawan upang mapanatiling maayos ang kalusugan ng nagbubuntis at ng kanyang sanggol. Dahil ang isang nagbubuntis na ina ay kumokunsumo ng maraming enerhiya sa pagbibigay ng sustansya sa kanyang sanggol.
@@ -88,21 +88,21 @@ function Macronutrients() {
             </p>
           </div>
 
-          <div className='w-[50%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+          <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>Macronutrients: Matibay na Kalusugan at Katawan? Protina ang Iyong Kaibigan</p>
             <p className='indent-10 text-justify'>
             Ang protina naman ay isang uri ng sustansya kung saan tinutulungan nuto ang isang nagbubuntis na ina sa pamamagitan ng pagdevelop ng iba’t ibang katawan ng sanggol at ina, dagdag pa dito ay nagdudulot din ito ng pagunlad ng mga selula ng sanggol. Makukuha ang protina sa mga pagkain tulad ng baka, karne, manok at iba pa. Sa bawat trimester ng pagbubuntis, tumataas ng 10-20 gramo ng protina ang kailangang makonsumo upang mapanati ang kalidad ng katawan. Dagdag pa dito ay ang dami ng pagkonsumo ng protina ay binabase sa edad at bigat ng isang ina. Maaring umabot ito ng 71-100 gramo ng protina kada araw upang tuluyang mapanatili ang mayor na pagbubuntis at kalusugan ng sanggol.
             </p>
           </div>
 
-          <div className='w-[50%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+          <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>Macronutrients: Fats at Fatty Acid para sa Dagdag Enerhiya at Bitamina</p>
             <p className='indent-10 text-justify'>
             Ang <i>fats</i> ay nabibilang sa grupo ng macronutrients kung saan ito ay nagbibigay ng maraming enerhiya sa isang nagbubuntis upang mapanatili ang maayos na pagunlad ng fetus. Dagdag pa dito ay nakatutulong din ito pagtanggap ng iba’t ibang bitamina tulad ng bitamina A, D, E, at K. Ang <i>fatty acids</i> naman ay pinapanatli ang balance ng <i>prostaglandin</i> sa katawan. Pinapababa din nito ang panganib ng preterm birth at ibang komplikasyon habang nagbubuntis. Ang <i>Omega 3 fatty acid</i> ay pinapaunlad ang mga mata, utak, katawan ng sanggol at kalusugan ng ina.
             </p>
           </div>
 
-          <div className='w-[50%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+          <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>Macronutrients: Iwas Anemia? Iron ang Hinahanap mong Sustansya</p>
             <p className='indent-10 text-justify'>
             Maraming dugo ang kinakailangan ng isang nagbubuntis na ina upang mapanatili ang kanyang lakas at sapat na sustansya ng sanggol. Kinakailangan din ang sapat na iron upang patuloy na makagawa ng hemoglobin na natatagpuan sa red blood cells. Ang inererekomendang dami ng iron ay 31.7 mg kung saan kapagnakamit ng isang ina ang akmang dami ay maaring maiwasan ang anemia (kakulangan sa dugo). Pinapanatili rin nto ang integridad ng placenta pati narin ang iba’t ibang pangangailangan ng sanggol. 
@@ -115,7 +115,7 @@ function Macronutrients() {
           <div className="w-full mt-5">
             <div 
               onClick={toggleHandler}
-              className="relative gap-10 mt-5 bg-[#FFF1B4] w-[50%] sm:w-full mx-auto rounded-full py-2 cursor-pointer"
+              className="relative gap-10 mt-5 bg-[#FFF1B4] w-[60%] sm:w-[80%] mx-auto rounded-full py-2 cursor-pointer"
               style={{ margin: '0 auto' }}
             >
               <img src={Icon} alt="PDF Icon" className='absolute w-24 left-5 top-1/2 transform -translate-y-1/2 sm:hidden' />
@@ -123,8 +123,8 @@ function Macronutrients() {
             </div>
 
             {toggle && (
-              <div className="dropdown-content bg-white shadow-md rounded mt-2 w-[50%] mx-auto relative z-10" style={{ margin: '0 auto' }}>
-                <ul className="divide-y mt-2">
+              <div className="dropdown-content bg-white shadow-md rounded mt-2 w-[60%] mx-auto relative z-10" style={{ margin: '0 auto' }}>
+                <ul className="divide-y mt-2 grid gap-y-4">
                   <li 
                     className="py-2 px-4 hover:bg-[#FFF1B4] cursor-pointer"
                     onClick={() => handleDownload("/files/pdf/Kabanata_1_Macronutrients.pdf", "MACRONUTRIENTS")} 

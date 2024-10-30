@@ -60,7 +60,7 @@ function Downloadables() {
 
   return (
     <div id="downloadables" className="mt-10 py-10">
-        <div className="border-2 border-[#473664] w-[50%] sm:w-[90%] rounded-e-3xl bg-pink-300 flex justify-center py-1">
+        <div className="border-2 border-[#473664] w-[50%] sm:w-[80%] rounded-e-3xl bg-pink-300 flex justify-center py-1">
         <span
             className="font-bobby text-[3rem] sm:text-4xl font-bold text-[#DE638A] tracking-wide"
             style={{
@@ -73,7 +73,7 @@ function Downloadables() {
         </div>
         <div className="grid w-full place-items-center mt-5">
             <div 
-              className="grid place-items-center gap-10 mt-5 bg-[#FFF1B4] w-[50%] rounded-full py-2 cursor-pointer relative sm:w-full"
+              className="grid place-items-center gap-10 mt-5 bg-[#FFF1B4] w-[60%] rounded-full py-2 cursor-pointer relative sm:w-[80%]"
             >
               <img src={Icon} alt="Icon" className='absolute w-24 left-6 mt-5 sm:hidden' />
               <span 
@@ -85,14 +85,14 @@ function Downloadables() {
         <div className="grid w-full place-items-center mt-10">
             <div 
               onClick={toggleDownloadablesHandler}
-              className="grid place-items-center gap-10 mt-5 bg-[#FFF1B4] w-[50%] rounded-full py-2 cursor-pointer relative sm:w-full"
+              className="grid place-items-center gap-10 mt-5 bg-[#FFF1B4] w-[60%] rounded-full py-2 cursor-pointer relative sm:w-[80%]"
             >
               <img src={Icon} alt="Icon" className='absolute w-24 left-6 mt-5 sm:hidden' />
               <span className="font-bold font-bobby text-[#473664] block text-center ">DOWNLOADABLES VIDEOS HERE</span>
             </div>
 
             {downloadables && (
-              <div className="dropdown-content bg-white shadow-md rounded mt-2 w-[50%] relative z-10">
+              <div className="dropdown-content bg-white shadow-md rounded mt-2 w-[60%] relative z-10">
                 <ul className="divide-y">
                   <li 
                     className="flex items-center justify-between py-2 px-4 hover:bg-[#FFF1B4] cursor-pointer"

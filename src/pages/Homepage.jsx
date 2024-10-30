@@ -22,7 +22,7 @@ function Homepage() {
 
   return (
     <>
-      <div id="/" className="z-20 relative grid sm:place-items-center md:place-items-center mb-24 bg-red-100 py-20">
+      <div id="/" className="z-20 relative grid sm:place-items-center md:place-items-center mb-24 bg-red-100 py-20 sm:py-10 md:py-10">
         <div className='flex justify-center items-center sm:w-[80%] md:w-[80%]'>
           <Slider 
             images={arrayImg}
