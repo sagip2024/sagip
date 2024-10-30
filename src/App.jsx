@@ -13,7 +13,6 @@ function App() {
       />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/contents" element={<Contents />} />
       </Routes>
     </div>
   );

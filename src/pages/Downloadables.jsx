@@ -59,7 +59,7 @@ function Downloadables() {
   }, [storage]);
 
   return (
-    <div id="micro" className="mt-10 py-10">
+    <div id="downloadables" className="mt-10 py-10">
         <div className="border-2 border-[#473664] w-[50%] sm:w-[90%] rounded-e-3xl bg-pink-300 flex justify-center py-1">
         <span
             className="font-bobby text-[3rem] sm:text-4xl font-bold text-[#DE638A] tracking-wide"
