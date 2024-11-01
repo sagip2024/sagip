@@ -12,6 +12,8 @@ import Icon4 from '../assets/icons/4.png';
 import Icon5 from '../assets/icons/5.png';
 import Icon6 from '../assets/icons/6.png';
 import Contents from './Contents';
+import NavLinks from '../components/NavLinks';
+import BG from '../assets/about/BG.png'
 
 function Homepage() {
   const arrayImg = [
@@ -22,7 +24,9 @@ function Homepage() {
 
   return (
     <>
-      <div id="/" className="z-20 relative grid sm:place-items-center md:place-items-center mb-24 bg-red-100 py-20 sm:py-10 md:py-10">
+      <div id="/" className="z-20 relative grid sm:place-items-center md:place-items-center mb-24 py-20 sm:py-10 md:py-10"
+      style={{ backgroundImage: `url(${BG})` }}
+      >
         <div className='flex justify-center items-center sm:w-[80%] md:w-[80%]'>
           <Slider 
             images={arrayImg}

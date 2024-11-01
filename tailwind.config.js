@@ -18,6 +18,7 @@ export default {
       fontFamily: {
         'bobby': ['Bobby Jones', 'sans-serif'],
         sans: ['Arial', 'Helvetica', 'ui-sans-serif', 'system-ui'],
+        quicksand: ['Quicksand', 'sans-serif']
       },
     },
     screens: {
