@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link, useNavigate } from 'react-router-dom';
 import Logo from '../assets/icons/SagipLogo.png';
+import Logo1 from '../assets/SagipLogo.png';
 function NavLinks() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const navigate = useNavigate()
@@ -18,7 +19,7 @@ function NavLinks() {
       <div className="py-1 z-10 bg-[#DE638A] sm:hidden md:hidden">
         <div className="flex justify-between items-center px-10">
           <div className="flex items-center gap-3">
-            <img src={Logo} alt="Sagip Logo" className="rounded-full h-12" />
+            <img src={Logo1} alt="Sagip Logo" className="rounded-full h-12" />
             <div className="bg-pink-300 grid place-items-center px-5 py-3 rounded-full font-bold italic">
               <span className='font-sans font-bold'>S.A.G.I.P</span>
             </div>

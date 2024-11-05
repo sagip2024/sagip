@@ -26,9 +26,9 @@ function About() {
               <div className='text-justify font-quicksand'>
                 <p className='indent-10'>Kami ay grupo ng mga mananaliksik at estudyante na nagmula sa kursong narsing ng Far Eastern University – Manila (FEU). Nais naming pasalamatan kayo sa pagtangkilik at pag-gamit ng website na ito upang paunlarin ang inyong kalusagan at kaalaman ukol sa maternal na nutrisyon. Wari’y itong website na ito ay produkto lamang ng isang proyekto at pananaliksik na nagngangalang, <b><i>“Development and evaluation of Support and Guidance: an Innovative tool for Primimother’s Nutrition (S.A.G.I.P) webpage for maternal nutritional knowledge of primigravida mothers.” </i></b>na aming isinasagawa para sa aming pananaliksik sa kurso, isa rin sa aming mga layunin bilang mga susunod na nars ng ating bansa, ay makatulong at makapagbigay ng mahahalagang impormasyon para sa ikauunlad ng kalusugan ng mga nanay. Ang pagbubuntis at ang konsepsiyon ng isang sanggol ay ilan lamang sa mga mirakulo na pinaubaya ng mundong ito. Kung kaya’t nangangailangan ng masinsinang pangangalaga at gabay ang ibinibigay sa mga nanay upang sila ay mapanatiling malusog, gayundin sa kanilang mga sanggol. Muli nais naming magbigay ng pasasalamat sa inyo!</p><br />
                 <p>Kung mayroon kayong katanungan, maaari niyo kaming kontakin sa mga sumusunod na plataporma;</p>
-                <div className='indent-10'>
-                  <p className='indent-10 sm:indent-5'>- Gmail: sagipwebpage2024@gmail.com</p>
-                  <p className='indent-10 sm:indent-5'>- Contact Number: 09561289513</p>
+                <div className='grid'>
+                  <span className='indent-100'>- Gmail: sagipwebpage2024@gmail.com</span>
+                  <span className='indent-10 sm:indent-5'>- Contact Number: 09561289513</span>
                 </div>
               </div>
             </div>
