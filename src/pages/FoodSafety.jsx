@@ -139,7 +139,7 @@ function FoodSafety() {
                   </li>
                   <li 
                     className="py-2 px-4 hover:bg-[#FFF1B4] cursor-pointer" 
-                    onClick={() => handleView("/files/files/pdf/Kabanata_5_Food_Safety.pdf")}
+                    onClick={() => handleView("/files/pdf/Kabanata_5_Food_Safety.pdf")}
                   >
                     View PDF
                   </li>

@@ -1,8 +1,17 @@
 import React from 'react';
 import Slider from '../components/Slider';
-import DOH1 from '../assets/doh1.jpg';
-import DOH2 from '../assets/doh2.jpg';
-import DOH3 from '../assets/doh3.jpg';
+import Slide1 from '../assets/Home/1.png'
+import Slide2 from '../assets/Home/2.png'
+import Slide3 from '../assets/Home/3.jpg'
+import Slide4 from '../assets/Home/4.png'
+import Slide5 from '../assets/Home/5.png'
+import Slide6 from '../assets/Home/6.png'
+import Slide7 from '../assets/Home/7.png'
+import Slide8 from '../assets/Home/8.png'
+import Slide9 from '../assets/Home/9.png'
+import Slide10 from '../assets/Home/10.png'
+import Slide11 from '../assets/Home/11.png'
+import Slide12 from '../assets/Home/12.png'
 import Icons from '../components/Icons';
 import Content from '../components/Content';
 import Icon1 from '../assets/icons/1.png';
@@ -16,10 +25,10 @@ import NavLinks from '../components/NavLinks';
 import BG from '../assets/about/BG.png'
 
 function Homepage() {
-  const arrayImg = [
-    { img: DOH1, title: 'Title1' },
-    { img: DOH2, title: 'Title2' },
-    { img: DOH3, title: 'Title3' },
+  const slides = [
+    { images: [Slide1, Slide2, Slide3, Slide4]},
+    { images: [Slide5, Slide6, Slide7, Slide8]},
+    { images: [Slide9, Slide10, Slide11, Slide12]},
   ];
 
   return (
@@ -29,7 +38,7 @@ function Homepage() {
       >
         <div className='flex justify-center items-center sm:w-[80%] md:w-[80%]'>
           <Slider 
-            images={arrayImg}
+            slides={slides}
           />
         </div>
         <div className="text-center my-4">

@@ -175,7 +175,7 @@ function NutriRecomm() {
                   </li>
                   <li 
                     className="py-2 px-4 hover:bg-[#FFF1B4] cursor-pointer" 
-                    onClick={() => handleView("/files/files/pdf/Kabanata_3_Nutritional_Recommendation.pdf")}
+                    onClick={() => handleView("/files/pdf/Kabanata_3_Nutritional_Recommendation.pdf")}
                   >
                     View PDF
                   </li>

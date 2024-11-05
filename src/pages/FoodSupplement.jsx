@@ -126,7 +126,7 @@ function FoodSupplement() {
                   </li>
                   <li 
                     className="py-2 px-4 hover:bg-[#FFF1B4] cursor-pointer" 
-                    onClick={() => handleView("/files/files/pdf/Kabanata_4_Food_Supplements.pdf")}
+                    onClick={() => handleView("/files/pdf/Kabanata_4_Food_Supplements.pdf")}
                   >
                     View PDF
                   </li>

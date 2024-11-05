@@ -133,7 +133,7 @@ function Macronutrients() {
                   </li>
                   <li 
                     className="py-2 px-4 hover:bg-[#FFF1B4] cursor-pointer" 
-                    onClick={() => handleView("/files/files/pdf/Kabanata_1_Macronutrients.pdf")}
+                    onClick={() => handleView("/files/pdf/Kabanata_1_Macronutrients.pdf")}
                   >
                     View PDF
                   </li>

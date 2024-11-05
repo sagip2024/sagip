@@ -174,7 +174,7 @@ function Micronutrients() {
                   </li>
                   <li 
                     className="py-2 px-4 hover:bg-[#FFF1B4] cursor-pointer" 
-                    onClick={() => handleView("/files/files/pdf/Kabanata_2_Micronutrients.pdf")}
+                    onClick={() => handleView("/files/pdf/Kabanata_2_Micronutrients.pdf")}
                   >
                     View PDF
                   </li>
