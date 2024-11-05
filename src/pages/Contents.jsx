@@ -21,7 +21,7 @@ function Contents() {
         <img 
         src={Icon9} 
         alt="" 
-        className="fixed top-0 right-10 z-0 mt-[-2%] w-80 drop-shadow-2xl animate-mini-bounce sm:hidden md:hidden borde-black" 
+        className="fixed top-0 right-10 z-0 w-80 drop-shadow-2xl animate-mini-bounce sm:hidden md:hidden borde-black" 
         />
         <img 
         src={Icon8} 

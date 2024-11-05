@@ -33,16 +33,15 @@ function Homepage() {
 
   return (
     <>
-      <div id="/" className="z-20 relative grid sm:place-items-center md:place-items-center mb-24 py-20 sm:py-10 md:py-10"
-      style={{ backgroundImage: `url(${BG})` }}
+      <div
+        id="/"
+        className="z-20 relative grid sm:place-items-center md:place-items-center mb-24 py-5 sm:py-10 md:py-10"
+        style={{ backgroundImage: `url(${BG})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
         <div className='flex justify-center items-center sm:w-[80%] md:w-[80%]'>
           <Slider 
             slides={slides}
           />
-        </div>
-        <div className="text-center my-4">
-          <span>Description: </span>
         </div>
         <div className="mt-5 grid grid-cols-3 sm:grid-cols-2 gap-x-24 sm:gap-x-12 gap-y-10 justify-center items-center mx-auto">
           <Icons 
