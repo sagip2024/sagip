@@ -37,14 +37,14 @@ function Slider({ slides }) {
   };
 
   return (
-    <div className="relative w-full h-96 sm:h-60 overflow-hidden rounded-2xl flex justify-center items-center">
+    <div className="relative w-full h-96 sm:h-96 overflow-hidden rounded-2xl flex justify-center items-center">
       <img src={BG} alt="Background" className="absolute w-[80%] h-[550px] object-cover sm:hidden md:hidden" />
 
       <div className="border-2 border-[#473664] w-[60%] sm:w-full md:w-full h-[70%] z-0 flex items-center justify-center bg-[#F7B9C4] relative">
         <div onClick={goToPrevious} className="cursor-pointer hover:scale-110 transition-transform">
           <FontAwesomeIcon
             icon={faCaretUp}
-            className="text-[#4A3267] text-[60px] transform -rotate-90 -mr-3 sm:text-[50px]"
+            className="text-[#4A3267] text-[60px] transform -rotate-90 -mr-3 sm:text-[50px] sm:-mr-2"
           />
         </div>
 
@@ -90,7 +90,7 @@ function Slider({ slides }) {
         <div onClick={goToNext} className="cursor-pointer hover:scale-110 transition-transform">
           <FontAwesomeIcon
             icon={faCaretUp}
-            className="text-[#4A3267] text-[60px] transform rotate-90 -ml-3 sm:text-[50px]"
+            className="text-[#4A3267] text-[60px] transform rotate-90 -ml-3 sm:text-[50px] sm:-ml-2"
           />
         </div>
       </div>
