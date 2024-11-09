@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import Icons from '../components/Icons';
 import Contents from './Contents';
-import NavLinks from '../components/NavLinks';
 import BG from '../assets/about/BG.png';
 import { useFirebaseStorage } from '../context/firebaseStorage';
 import Slider from '../components/Slider';
-import Loading from '../components/Loading';
 
 function Homepage() {
   const [sliders, setSliders] = useState([]);

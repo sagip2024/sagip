@@ -1,16 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import Content from '../components/Content';
-import Icon10 from '../assets/icons/10.png';
-import Icon7 from '../assets/icons/7.png';
-import Icon9 from '../assets/icons/9.png';
-import Icon8 from '../assets/icons/8.png';
-import Macronutrients from './Macronutrients';
 import Micronutrients from './Micronutrients';
 import FoodSafety from './FoodSafety';
 import FoodSupplement from './FoodSupplement';
 import Downloadables from './Downloadables';
 import NutriRecomm from './NutriRecomm';
+import Macronutrients from './Macronutrients';
 import { useFirebaseStorage } from '../context/firebaseStorage';
+
 function Contents() {
   const [icons, setIcons] = useState([])
   const { listFilesInFolder } = useFirebaseStorage();

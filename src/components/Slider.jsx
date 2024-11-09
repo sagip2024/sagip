@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretUp } from '@fortawesome/free-solid-svg-icons';
-import BG from '../assets/SLIDER_BACKGROUND.png';
 import Logo from '../assets/icons/SagipLogo.png';
 import { useFirebaseStorage } from '../context/firebaseStorage';
 
