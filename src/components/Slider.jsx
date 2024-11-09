@@ -3,11 +3,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretUp } from '@fortawesome/free-solid-svg-icons';
 import BG from '../assets/SLIDER_BACKGROUND.png';
 import Logo from '../assets/icons/SagipLogo.png';
+import { useFirebaseStorage } from '../context/firebaseStorage';
 
 function Slider({ slides }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const intervalRef = useRef(null);
+  const [icons, setIcons] = useState([])
+  const { listFilesInFolder } = useFirebaseStorage();
 
+  useEffect(() => {
+    const fetchIcons = async () => {
+      const paths = await listFilesInFolder('images/home');
+      const fullPaths = paths.map(
+        path => `https://firebasestorage.googleapis.com/v0/b/sagip-a7258.appspot.com/o/${encodeURIComponent(path)}?alt=media`
+      );
+      setIcons(fullPaths);
+    };
+    fetchIcons();
+  }, [listFilesInFolder]);
+  
   const startAutoSlide = () => {
     intervalRef.current = setInterval(() => {
       setCurrentIndex(prevIndex => (prevIndex + 1) % slides.length);
@@ -36,9 +50,10 @@ function Slider({ slides }) {
     resetAutoSlide();
   };
 
+  
   return (
     <div className="relative w-full h-96 sm:h-80 overflow-hidden rounded-2xl flex justify-center items-center">
-      <img src={BG} alt="Background" className="absolute w-[80%] h-[550px] object-cover sm:hidden md:hidden" />
+      <img src={icons[0]} alt="Background" className="absolute w-[80%] h-[550px] object-cover sm:hidden md:hidden" />
 
       <div className="border-2 border-[#473664] w-[60%] sm:w-full md:w-full h-[70%] z-0 flex items-center justify-center bg-[#F7B9C4] relative">
         <div onClick={goToPrevious} className="cursor-pointer hover:scale-110 transition-transform">

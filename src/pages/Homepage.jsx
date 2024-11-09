@@ -1,36 +1,41 @@
-import React from 'react';
-import Slider from '../components/Slider';
-import Slide1 from '../assets/Home/1.png'
-import Slide2 from '../assets/Home/2.png'
-import Slide3 from '../assets/Home/3.jpg'
-import Slide4 from '../assets/Home/4.png'
-import Slide5 from '../assets/Home/5.png'
-import Slide6 from '../assets/Home/6.png'
-import Slide7 from '../assets/Home/7.png'
-import Slide8 from '../assets/Home/8.png'
-import Slide9 from '../assets/Home/9.png'
-import Slide10 from '../assets/Home/10.png'
-import Slide11 from '../assets/Home/11.png'
-import Slide12 from '../assets/Home/12.png'
+import React, { useEffect, useState } from 'react';
 import Icons from '../components/Icons';
-import Content from '../components/Content';
-import Icon1 from '../assets/icons/1.png';
-import Icon2 from '../assets/icons/2.png';
-import Icon3 from '../assets/icons/3.png';
-import Icon4 from '../assets/icons/4.png';
-import Icon5 from '../assets/icons/5.png';
-import Icon6 from '../assets/icons/6.png';
 import Contents from './Contents';
 import NavLinks from '../components/NavLinks';
 import BG from '../assets/about/BG.png'
-
+import firebaseApp from '../../firebaseConfig';
+import { useFirebaseStorage } from '../context/firebaseStorage';
+import Slider from '../components/Slider'
 function Homepage() {
-  const slides = [
-    { images: [Slide1, Slide2, Slide3, Slide4]},
-    { images: [Slide5, Slide6, Slide7, Slide8]},
-    { images: [Slide9, Slide10, Slide11, Slide12]},
-  ];
+  const [sliders, setSliders] = useState([]);
+  const { listFilesInFolder } = useFirebaseStorage();
+  const [icon, setIcon] = useState([]);
+  useEffect(() => {
+    const fetchIcons = async () => {
+      const paths = await listFilesInFolder('images/icons');
+      const fullPaths = paths.map(
+        path => `https://firebasestorage.googleapis.com/v0/b/sagip-a7258.appspot.com/o/${encodeURIComponent(path)}?alt=media`
+      );
+      setIcon(fullPaths);
+    };
+    fetchIcons();
+  }, [listFilesInFolder]);
 
+  useEffect(() => {
+    const fetchSliders = async () => {
+      const paths = await listFilesInFolder('images/slider');
+      const fullPaths = paths.map(
+        path => `https://firebasestorage.googleapis.com/v0/b/sagip-a7258.appspot.com/o/${encodeURIComponent(path)}?alt=media`
+      );
+      setSliders(fullPaths);
+    };
+    fetchSliders();
+  }, [listFilesInFolder]);
+  const slides = [
+    {images: [sliders[0], sliders[4], sliders[5], sliders[6]]},
+    {images: [sliders[7], sliders[8], sliders[9], sliders[10]]},
+    {images: [sliders[1], sliders[2], sliders[3], sliders[11]]}
+  ]
   return (
     <>
       <div
@@ -49,42 +54,42 @@ function Homepage() {
             borderColor="border-[#DE638A]"
             name="Macro"
             pageId="macro"
-            image={Icon5}
+            image={icon[5]}
           />
           <Icons 
             bgColor="bg-[#F6A2BB]"
             borderColor="border-[#DE638A]"
             name="Micro"
             pageId="micro"
-            image={Icon4}
+            image={icon[4]}
           />
           <Icons 
             bgColor="bg-[#F6A2BB]"
             borderColor="border-[#DE638A]"
             name="Nutri Recomm"
             pageId="nutrirecomm"
-            image={Icon2}
+            image={icon[2]}
           />
           <Icons 
             bgColor="bg-[#F6A2BB]"
             borderColor="border-[#DE638A]"
             name="Food Supplement"
             pageId="foodsupplement"
-            image={Icon6}
+            image={icon[6]}
           />
           <Icons 
             bgColor="bg-[#F6A2BB]"
             borderColor="border-[#DE638A]"
             name="Food Safety" 
             pageId="foodsafety"
-            image={Icon3}
+            image={icon[3]}
           />
           <Icons 
             bgColor="bg-[#F3D9E5]"
             borderColor="border-[#F3D9E5]"
             name="Download Video"
             pageId="downloadables"
-            image={Icon1}
+            image={icon[0]}
           />
         </div>
       </div>

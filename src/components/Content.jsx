@@ -67,7 +67,6 @@ function Macronutrients({
           })
         );
         setVideos(videoData);
-        console.log(videoData);
       } catch (error) {
         console.error('Error fetching videos:', error);
       }

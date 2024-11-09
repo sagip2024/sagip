@@ -1,10 +1,18 @@
-import React from 'react'
-import AboutUs from '../assets/about/About.png'
-import Star from '../assets/about/Star.png'
-import Rocket from '../assets/about/Rocket.png'
-import Moon from '../assets/about/Moon.png'
-import Cloud from '../assets/about/Cloud.png'
+import React, { useEffect, useState } from 'react'
+import { useFirebaseStorage } from '../context/firebaseStorage'
 function About() {
+  const [about, setabouts] = useState([])
+  const { listFilesInFolder } = useFirebaseStorage();
+  useEffect(() => {
+    const fetchIcons = async () => {
+      const paths = await listFilesInFolder('images/about');
+      const fullPaths = paths.map(
+        path => `https://firebasestorage.googleapis.com/v0/b/sagip-a7258.appspot.com/o/${encodeURIComponent(path)}?alt=media`
+      );
+      setabouts(fullPaths);
+    };
+    fetchIcons();
+  }, [listFilesInFolder]);
   return (
     <>
       <div className='width-full py-3 grid place-items-center'>
@@ -33,14 +41,14 @@ function About() {
               </div>
             </div>
             <div className='w-[40%] flex justify-center items-center sm:w-full'>
-              <img src={AboutUs} alt="" className='w-96 h-96 ml-10 sm:ml-0' />
+              <img src={about[0]} alt="" className='w-96 h-96 ml-10 sm:ml-0' />
             </div>
       </div>
       <div className='w-full h-[80%] lg:grid xl:grid mt-1 relative'>
-        <img src={Moon} alt="" className='sm:hidden md:hidden absolute left-10 w-40 h-40 animate-mini-bounce'/>
-        <img src={Cloud} alt="" className='sm:hidden md:hidden absolute bottom-0 left-20 w-40 h-40 animate-mini-bounce'/>
-        <img src={Star} alt="" className='sm:hidden md:hidden absolute right-10 w-40 h-40 animate-mini-bounce'/>
-        <img src={Rocket} alt="" className='sm:hidden md:hidden absolute bottom-0 right-20 w-52 h-52 animate-mini-bounce'/>
+        <img src={about[3]} alt="" className='sm:hidden md:hidden absolute left-10 w-40 h-40 animate-mini-bounce'/>
+        <img src={about[2]} alt="" className='sm:hidden md:hidden absolute bottom-0 left-20 w-40 h-40 animate-mini-bounce'/>
+        <img src={about[5]} alt="" className='sm:hidden md:hidden absolute right-10 w-40 h-40 animate-mini-bounce'/>
+        <img src={about[4]} alt="" className='sm:hidden md:hidden absolute bottom-0 right-20 w-52 h-52 animate-mini-bounce'/>
           <div className='grid place-items-center sm:mt-10 md:mt-10'>
             <div className='grid place-items-center mt-5 w-[60%] sm:w-[80%] md:w-[80%]'>
               <span className='text-center font-bobby text-5xl mb-1'
