@@ -1,41 +1,46 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Icons from '../components/Icons';
 import Contents from './Contents';
 import NavLinks from '../components/NavLinks';
-import BG from '../assets/about/BG.png'
-import firebaseApp from '../../firebaseConfig';
+import BG from '../assets/about/BG.png';
 import { useFirebaseStorage } from '../context/firebaseStorage';
-import Slider from '../components/Slider'
+import Slider from '../components/Slider';
+import Loading from '../components/Loading';
+
 function Homepage() {
   const [sliders, setSliders] = useState([]);
   const { listFilesInFolder } = useFirebaseStorage();
   const [icon, setIcon] = useState([]);
-  useEffect(() => {
-    const fetchIcons = async () => {
-      const paths = await listFilesInFolder('images/icons');
-      const fullPaths = paths.map(
-        path => `https://firebasestorage.googleapis.com/v0/b/sagip-a7258.appspot.com/o/${encodeURIComponent(path)}?alt=media`
-      );
-      setIcon(fullPaths);
-    };
-    fetchIcons();
-  }, [listFilesInFolder]);
 
-  useEffect(() => {
-    const fetchSliders = async () => {
-      const paths = await listFilesInFolder('images/slider');
-      const fullPaths = paths.map(
-        path => `https://firebasestorage.googleapis.com/v0/b/sagip-a7258.appspot.com/o/${encodeURIComponent(path)}?alt=media`
-      );
-      setSliders(fullPaths);
-    };
-    fetchSliders();
-  }, [listFilesInFolder]);
+  const fetchData = async () => {
+    const iconPaths = await listFilesInFolder('images/icons');
+    const iconFullPaths = iconPaths.map(
+      (path) => `https://firebasestorage.googleapis.com/v0/b/sagip-a7258.appspot.com/o/${encodeURIComponent(path)}?alt=media`
+    );
+    setIcon(iconFullPaths);
+
+    const sliderPaths = await listFilesInFolder('images/slider');
+    const sliderFullPaths = sliderPaths.map(
+      (path) => `https://firebasestorage.googleapis.com/v0/b/sagip-a7258.appspot.com/o/${encodeURIComponent(path)}?alt=media`
+    );
+    setSliders(sliderFullPaths);
+  };
+
+  if (sliders.length === 0 || icon.length === 0) {
+    fetchData();
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <span className="text-3xl font-bold text-[#DE638A]">Loading...</span>
+      </div>
+    );
+  }
+
   const slides = [
-    {images: [sliders[0], sliders[4], sliders[5], sliders[6]]},
-    {images: [sliders[7], sliders[8], sliders[9], sliders[10]]},
-    {images: [sliders[1], sliders[2], sliders[3], sliders[11]]}
-  ]
+    { images: [sliders[0], sliders[4], sliders[5], sliders[6]] },
+    { images: [sliders[7], sliders[8], sliders[9], sliders[10]] },
+    { images: [sliders[1], sliders[2], sliders[3], sliders[11]] }
+  ];
+
   return (
     <>
       <div
@@ -44,9 +49,7 @@ function Homepage() {
         style={{ backgroundImage: `url(${BG})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
         <div className='flex justify-center items-center sm:w-[80%] md:w-[80%]'>
-          <Slider 
-            slides={slides}
-          />
+          <Slider slides={slides} />
         </div>
         <div className="mt-5 grid grid-cols-3 sm:grid-cols-2 gap-x-24 sm:gap-x-12 gap-y-10 justify-center items-center mx-auto">
           <Icons 

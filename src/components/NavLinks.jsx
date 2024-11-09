@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Home from '../assets/homeIcon.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link, useNavigate } from 'react-router-dom';
 import Logo from '../assets/icons/SagipLogo.png';
 import Logo1 from '../assets/SagipLogo.png';
+import { useFirebaseStorage } from '../context/firebaseStorage';
 function NavLinks() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const navigate = useNavigate()
@@ -14,6 +15,19 @@ function NavLinks() {
     navigate(nav)
     setIsDrawerOpen(!isDrawerOpen)
   }
+  const [icons, setIcons] = useState([])
+  const { listFilesInFolder } = useFirebaseStorage();
+  useEffect(() => {
+    const fetchIcons = async () => {
+      const paths = await listFilesInFolder('images/icons');
+      const fullPaths = paths.map(
+        path => `https://firebasestorage.googleapis.com/v0/b/sagip-a7258.appspot.com/o/${encodeURIComponent(path)}?alt=media`
+      );
+      setIcons(fullPaths);
+    };
+    fetchIcons();
+  }, [listFilesInFolder]);
+  console.log(icons)
   return (
     <div>
       <div className="py-1 z-10 bg-[#DE638A] sm:hidden md:hidden">
@@ -26,11 +40,11 @@ function NavLinks() {
           </div>
           <div className="flex space-x-4">
               <div
-                className="font-sans font-bold py-2 px-4 border border-[#DE638A] bg-pink-300 hover:bg-pink-500 text-xl rounded-3xl italic z-50 cursor-pointer" onClick={() => navigate('/about')}
+                className="font-sans font-bold py-2 px-4 border border-[#DE638A] bg-pink-300 hover:bg-pink-500 text-xl rounded-3xl z-20 italic cursor-pointer" onClick={() => navigate('/about')}
               >
                 About Us
               </div>
-            <div className="bg-pink-300 rounded-3xl h-11 w-24 flex items-center justify-center cursor-pointer hover:bg-pink-500 z-50" onClick={() => navigate('/')}>
+            <div className="bg-pink-300 rounded-3xl h-11 w-24 flex items-center justify-center cursor-pointer hover:bg-pink-500 z-20" onClick={() => navigate('/')}>
               <img src={Home} alt="Home Icon" className="w-full h-full object-contain" />
             </div>
           </div>
