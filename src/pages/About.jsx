@@ -8,7 +8,7 @@ function About() {
 
   useEffect(() => {
     const fetchIcons = async () => {
-      setLoading(true);  // Set loading to true when fetching data
+      setLoading(true);
       try {
         const paths = await listFilesInFolder('images/about');
         const fullPaths = paths.map(
