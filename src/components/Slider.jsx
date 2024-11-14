@@ -52,9 +52,9 @@ function Slider({ slides }) {
   
   return (
     <div className="relative w-full h-96 sm:h-80 overflow-hidden rounded-2xl flex justify-center items-center">
-      <img src={icons[0]} alt="Background" className="absolute w-[80%] h-[550px] object-cover sm:hidden md:hidden" />
+      <img src={icons[0]} alt="Background" className="absolute w-[70%] h-[600px] sm:hidden md:hidden" />
 
-      <div className="border-2 border-[#473664] w-[60%] sm:w-full md:w-full h-[70%] z-0 flex items-center justify-center bg-[#F7B9C4] relative">
+      <div className="border-2 border-[#473664] w-[50%] sm:w-full md:w-full h-[80%] z-0 flex items-center justify-center bg-[#F7B9C4] relative">
         <div onClick={goToPrevious} className="cursor-pointer hover:scale-110 transition-transform">
           <FontAwesomeIcon
             icon={faCaretUp}
@@ -62,9 +62,9 @@ function Slider({ slides }) {
           />
         </div>
 
-        <div className="border-2 border-[#473664] w-[90%] h-full relative overflow-hidden">
+        <div className="border-2 border-[#473664] w-[85%] h-full relative overflow-hidden">
           <div className="z-10 absolute inset-0 flex flex-col items-center justify-center text-center space-y-2">
-            <img src={Logo} alt="Logo" className="w-56 opacity-60 sm:w-44" />
+            <img src={Logo} alt="Logo" className="w-56 opacity-50 mt-9 sm:w-44" />
             <span className="text-[#DE638A] font-semibold w-96 text-xl absolute bottom-0 sm:text-sm sm:w-64 sm:bottom-3">
               Support and Guidance: An Innovative Tool for PrimiMothers' Nutrition
             </span>

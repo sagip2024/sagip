@@ -46,7 +46,7 @@ function FoodSafety() {
         fetchVideos();
         }, [storage]);
   return (
-    <div id="foodsafety" className="mt-10 py-10">
+    <div id="foodsafety" className="py-10">
       <div className="border-2 border-[#473664] w-[50%] sm:w-[90%] rounded-e-3xl bg-pink-300 flex justify-center py-1">
         <span
           className="font-bobby text-[3rem] sm:text-4xl font-bold text-[#DE638A] tracking-wide"
@@ -75,7 +75,7 @@ function FoodSafety() {
             )}
         </div>
 
-        <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+        <div className='text-justify w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>1. Paghuhugas ng kamay at mga lugar</p>
             <ul className='pl-12 list-disc grid gap-y-4'>
                 <li><span className='font-bold'>Hugasan mabuti ang mga kamay</span> gamit ang tubig at sabon sa loob ng 20 segundo bago at pagkatapos humawak ng pagkain, at pagkatapos gumamit ng banyo, magpalit ng diaper, at humawak ng mga alagang hayop.</li>
@@ -86,17 +86,17 @@ function FoodSafety() {
             </ul>
           </div>
 
-          <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+          <div className='text-justify w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>1. Paghihiwalay ng mga pagkain</p>
             <ul className='pl-12 list-disc grid gap-y-4'>
-                <li><span className='font-bold'>Hugasan mabuti ang mga kamay</span> gamit ang tubig at sabon. Ugaliing maghugas ng kamay sa loob ng 20 segundo bago at pagkatapos humawak ng pagkain, at pagkatapos gumamit ng banyo, magpalit ng diaper, at humawak ng mga alagang hayop.</li>
-                <li><span className='font-bold'>Hugasan ang mga cutting board, plato, at kasangkapan</span> gamit ang mainit na tubig na may sabon pagkatapos maghanda ng bawat pagkain.</li>
-                <li><span className='font-bold'>Gumamit ng papel na tuwalya</span> para linisin ang mga ibabaw ng kusina. Kung gumagamit ng mga tuwalya ng tela, labhan ang mga ito nang madalas.</li>
-                <li><span className='font-bold'>Banlawan ang mga sariwang prutas at gulay</span> gamit ang tubig, kasama na ang mga balat at alisan ng balat na hindi kinakain.</li>
-                <li><span className='font-bold'>Linisin ang mga takip ng lata</span> bago buksan.</li>
+                <li><span className='font-bold'>Paghiwalayin ang hilaw na karne</span> mula sa ibang pagkain sa iyong shopping cart, grocery bags, at refrigerator.</li>
+                <li><span className='font-bold'>Gumamit ng hiwalay na cutting board</span> para sa sariwang prutas at gulay, at isa pa para sa hilaw na karne, manok, at isda.</li>
+                <li><span className='font-bold'>Huwag ilagay ang luto na pagkain sa plato na dati nang ginagamit para sa hilaw na karne, manok, isda, o itlog</span> maliban kung ang plato ay nahugasan sa mainit at sabon na tubig.</li>
+                <li><span className='font-bold'>Huwag i-reuse ang marinades na ginamit sa hilaw na pagkain</span> maliban kung ito ay pakukuluan muna.
+                </li>
             </ul>
           </div>
-          <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+          <div className='text-justify w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>3. Pagluluto sa tamang temperatura</p>
             <ul className='pl-12 list-disc grid gap-y-4'>
                 <li><span className='font-bold'>Gamitin ang <i>food thermometer</i></span> upang tiyakin ang kaligtasan ng karne, manok, seafood, at mga produkto ng itlog para sa lahat ng paraan ng pagluluto. Dapat na maluto ang mga pagkain sa tamang minimum na internal na temperatura upang patayin ang mga mapanganib na bakterya tulad ng salmonella. Ito ay isang uri ng bakterya na nagdudulot ng impeksyon sa bituka ng tao, lalo na kapag kumakain ng kontaminadong pagkain.</li>
@@ -105,7 +105,7 @@ function FoodSafety() {
             </ul>
           </div>
 
-          <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+          <div className='text-justify w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>4. Pagpapalamig ng mga pagkain</p>
             <ul className='pl-12 list-disc grid gap-y-4'>
                 <li><span className='font-bold'>Gumamit ng appliance <i>thermometer</i></span> upang tiyakin na ang temperatura ay laging 40°F o mas mababa at ang freezer ay 0°F o mas mababa.</li>

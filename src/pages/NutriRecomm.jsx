@@ -46,7 +46,7 @@ function NutriRecomm() {
         fetchVideos();
         }, [storage]);
   return (
-    <div id="nutrirecomm" className="mt-10 py-10">
+    <div id="nutrirecomm" className="py-10">
       <div className="border-2 border-[#473664] w-[50%] sm:w-[90%] rounded-e-3xl bg-pink-300 flex justify-center py-1">
         <span
           className="font-bobby text-[3rem] sm:text-4xl sm:text-center md:text-center font-bold text-[#DE638A] tracking-wide"
@@ -75,11 +75,11 @@ function NutriRecomm() {
             )}
         </div>
 
-        <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+        <div className='text-justify w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p>Nakalapat ang mga sumusunod na pangunahing gabay sa wastong nutrisyon:</p>
             <ul className='pl-5 list-decimal grid gap-y-4'>
                 <li>
-                    <span className='font-bold'>Magkaroon ng balanseng diyeta</span> sa pamamagitan ng tatlong beses sa isang araw, kasama ang isa o dalawang masustansyang meryenda. Kumain ng masustansyang pagkain mula sa bawat food group tulad ng prutas, gulay, whole grains, protina, at mga produktong dairy. Kumain ng prutas na may dalawang servings, at gulay na may tatlong servings.
+                    <span className='font-bold'>Magkaroon ng balanseng diyeta</span> sa pagkain ng tatlong beses sa isang araw, kasama ang isa o dalawang masustansyang meryenda. Kumain ng masustansyang pagkain mula sa bawat <i>food group</i> tulad ng prutas, gulay, <i>whole grains</i>, protina, at mga produktong <i>dairy</i>. Kumain ng prutas na may dalawang <i>servings</i>, at gulay na may tatlong <i>servings</i>.
                     <div className='pl-10 mt-2'>
                         <p>Mga Halimbawa:</p>
                         <p>Prutas - oranges, saging, mangga, mansanas, at berries</p>
@@ -89,7 +89,7 @@ function NutriRecomm() {
                         <p>Dairy foods - gatas at yogurt</p>
                     </div>
                 </li>
-                <li><span className='font-bold'>Uminom ng prenatal na bitamina at mineral na suplemento</span> tulad ng folic acid, iron, calcium, vitamin D.</li>
+                <li><span className='font-bold'>Uminom ng <i>prenatal</i> na bitamina at mineral na suplemento</span> tulad ng <i>folic acid</i>, <i>iron</i>, <i>calcium</i>, <i>vitamin D</i>.</li>
                 <li><span className='font-bold'>Sapat na pag-inom ng tubig:</span> 8 hanggang 12 baso ng tubig bawat araw.</li>
                 <li><span className='font-bold'>Iwasan ang pag inom ng inuming may alak</span> dahil nakakasama ito para sa sanggol.</li>
                 <li><span className='font-bold'>Regular na ehersisyo:</span> Mahalaga para sa mga buntis na makapag-ehersisyo ng 30 minuto bawat araw.</li>
@@ -97,7 +97,7 @@ function NutriRecomm() {
             </ul>
           </div>
 
-          <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+          <div className='text-justify w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>Dami ng Nutrisyon Para sa Iba’t Ibang Yugto ng Pagbubuntis</p>
             <p className='indent-10 text-justify'>
             Bawat yugto ng pagbubuntis ay may inirerekomendang nutrisyon upang mapanatiling malusog ang isang nagbubuntis. Para sa ikalawa at ikatlong trimester ng pagbubuntis, kinakailangang madagdagan ng 300 kaloriya. Importante na tandaan na ang kaloriya ay naka depende sa timbang ng isang tao, kaya hindi natin masasabi ang eksaktong kaloriya na kailangan ng isang nagbubuntis sa bawat trimester.
@@ -110,20 +110,20 @@ function NutriRecomm() {
             </ul>
           </div>
 
-          <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+          <div className='text-justify w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>Pinggang Pinoy para sa Buntis</p>
             <p className='indent-10 text-justify'>
-            Ang pinggang pinoy para sa buntis ay naglalaman ng gabay sa tamang nutrisyon at pagkain upang matugunan ang pangangailangan sa panahon ng pagbubuntis. Binubuo ito ng go, grow, at glow foods kasama ang gatas.
+            Ang pinggang pinoy para sa buntis ay naglalaman ng gabay sa tamang nutrisyon at pagkain upang matugunan ang pangangailangan sa panahon ng pagbubuntis. Binubuo ito ng <i>go</i>, <i>grow</i>, at <i>glow foods</i> kasama ang gatas.
             </p>
             <div className='grid place-items-center py-5'>
                 <img src={GGG} alt="Go, Grow and Glow" className='w-96'/>
             </div>
             <p className='indent-10 text-justify'>
-            Ang ¼ ng plato ay mayroong go foods. Ito ay mga pagkaing mayaman sa carbohydrates tulad ng kain, mais, at tinapay. Isa pang kapat (¼) ng plato ay para sa mga grow foods na mayaman sa protina tulad ng karne, isda, itlog, at munggo. At ang huling isa pang kalahati (½) ng plato ay  nakalaan sa mga glow foods na mayaman sa bitamina, mineral, at fiber tulad ng mga gulay at prutas. Kinakailangan din na mayroong gatas at mga produkto ng gatas tulad ng yogurt para sa calcium at iba pang nutrients.
+            Ang ¼ ng plato ay mayroong <i>go foods</i>. Ito ay mga pagkaing mayaman sa <i>carbohydrates</i> tulad ng kanin, mais, at tinapay. Isa pang kapat (¼) ng plato ay para sa mga <i>grow foods</i> na mayaman sa protina tulad ng karne, isda, itlog, at munggo. At ang huling isa pang kalahati (½) ng plato ay  nakalaan sa mga <i>glow foods</i> na mayaman sa bitamina, <i>mineral</i>, at <i>fiber</i> tulad ng mga gulay at prutas. Kinakailangan din na mayroong gatas at mga produkto ng gatas tulad ng <i>yogurt</i> para sa <i>calcium</i> at iba pang <i>nutrients</i>.
             </p>
           </div>
 
-          <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
+          <div className='text-justify w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold text-center'>Halimbawa ng Kumpletong Pinggang Pinoy Para sa Buntis</p>
             <p className='font-bold'>Go: </p>
             <ul className='pl-10 list-disc'>

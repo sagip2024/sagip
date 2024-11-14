@@ -34,9 +34,18 @@ function Homepage() {
   }
 
   const slides = [
-    { images: [sliders[0], sliders[4], sliders[5], sliders[6]] },
-    { images: [sliders[7], sliders[8], sliders[9], sliders[10]] },
-    { images: [sliders[1], sliders[2], sliders[3], sliders[11]] }
+    { images: [sliders[0]] },
+    { images: [sliders[1]] },
+    { images: [sliders[2]] },
+    { images: [sliders[3]] },
+    { images: [sliders[4]] },
+    { images: [sliders[5]] },
+    { images: [sliders[6]] },
+    { images: [sliders[7]] },
+    { images: [sliders[8]] },
+    { images: [sliders[9]] },
+    { images: [sliders[10]] },
+    { images: [sliders[11]] }
   ];
 
   return (
