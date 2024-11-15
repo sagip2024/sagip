@@ -26,5 +26,4 @@ export const FirebaseStorageProvider = ({ children }) => {
   );
 };
 
-// Custom hook for easy access to the context
 export const useFirebaseStorage = () => useContext(FirebaseStorageContext);

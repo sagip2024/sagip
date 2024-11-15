@@ -45,6 +45,7 @@ function NutriRecomm() {
         
         fetchVideos();
         }, [storage]);
+        console.log(videos)
   return (
     <div id="nutrirecomm" className="py-10">
       <div className="border-2 border-[#473664] w-[50%] sm:w-[90%] rounded-e-3xl bg-pink-300 flex justify-center py-1">
@@ -68,9 +69,9 @@ function NutriRecomm() {
           </div>
 
           <div className="w-[60%] sm:w-[80%] md:w-[60%] h-72 overflow-hidden rounded-2xl bg-black relative">
-            {videos[1] && (
+            {videos[3] && (
             <div className="w-full h-72 overflow-hidden rounded-2xl bg-black relative">
-                <video controls className="w-full h-full" src={videos[1].url}></video>
+                <video controls className="w-full h-full" src={videos[3].url}></video>
             </div>
             )}
         </div>
