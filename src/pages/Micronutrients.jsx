@@ -77,7 +77,7 @@ function Micronutrients() {
         <div className='w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>Importansya ng Iron-Folic Acid - IFA</p>
             <span className='text-justify'>
-            <p className='indent-10'>Ang <i>iron</i> at <i>folic acid</i> ang dalawang primaryang bitamina na inirerekomenda ng mga eksperto na inumin ng mga ina sa pang araw-araw habang sila ay nagbubuntis. Dagdag pa dito ay kabilang sila sa mga suplementasyon na maaaring mabili sa mga botika, kadalasan ang sa kanila ay <i>iron-folic acid supplements</i> o IFAs.</p>
+            <p className='indent-10'>Ang <i>iron</i> at <i>folic acid</i> ang dalawang primaryang bitamina na inirerekomenda ng mga eksperto na inumin ng mga ina sa pang araw-araw habang sila ay nagbubuntis. Dagdag pa dito ay kabilang sila sa mga supplementasyon na maaaring mabili sa mga botika, kadalasan ang sa kanila ay <i>iron-folic acid supplements</i> o IFAs.</p>
             </span>
             <span className='text-justify'>
             <i>Ano nga ba ang Iron?</i>
@@ -85,7 +85,7 @@ function Micronutrients() {
             </span>
             <span className='text-justify'>
             <i>Ano naman ang Anemia?</i>
-            <p className='indent-10'>Ang <i>anemia</i> ay isang sakit kung saan mayroong kakulangan ng dugo ang isang tao. Maaaring ang isang ina na nagbubuntis ay magkaroon ng <i>anemia</i> dahil tumataas ang kinakailangan na dugo upang mabigyang sustansiya ang sanggol.</p>
+            <p className='indent-10'>Ang <i>anemia</i> ay isang sakit kung saan mayroong kakulangan ng dugo ang isang tao. Maaaring ang isang ina na nagbubuntis ay magkaroon ng <i>anemia</i> dahil tumataas ang kinakailangan na dugo upang mabigyang sustansiya ang mga sanggol.</p>
             </span>
             <span className='text-justify'>
             <i>Ano naman ang Folic  acid?</i>
