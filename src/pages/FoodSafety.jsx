@@ -87,7 +87,7 @@ function FoodSafety() {
           </div>
 
           <div className='text-justify w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
-            <p className='font-bold'>1. Paghihiwalay ng mga pagkain</p>
+            <p className='font-bold'>2. Paghihiwalay ng mga pagkain</p>
             <ul className='pl-12 list-disc grid gap-y-4'>
                 <li><span className='font-bold'>Paghiwalayin ang hilaw na karne</span> mula sa ibang pagkain sa iyong shopping cart, grocery bags, at refrigerator.</li>
                 <li><span className='font-bold'>Gumamit ng hiwalay na cutting board</span> para sa sariwang prutas at gulay, at isa pa para sa hilaw na karne, manok, at isda.</li>
@@ -99,20 +99,20 @@ function FoodSafety() {
           <div className='text-justify w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>3. Pagluluto sa tamang temperatura</p>
             <ul className='pl-12 list-disc grid gap-y-4'>
-                <li><span className='font-bold'>Gamitin ang <i>food thermometer</i></span> upang tiyakin ang kaligtasan ng karne, manok, seafood, at mga produkto ng itlog para sa lahat ng paraan ng pagluluto. Dapat na maluto ang mga pagkain sa tamang minimum na internal na temperatura upang patayin ang mga mapanganib na bakterya tulad ng salmonella. Ito ay isang uri ng bakterya na nagdudulot ng impeksyon sa bituka ng tao, lalo na kapag kumakain ng kontaminadong pagkain.</li>
-                <li><span className='font-bold'>Kapag nagluluto sa <i>microwave oven</i>,</span> takpan ang pagkain, ihalo, at i-rotate para sa pantay na pagluluto. Kung walang turntable, i-rotate ang pinggan ng mano-mano isang beses o dalawang beses sa pagluluto.</li>
-                <li><span className='font-bold'>Pakuluan ang mga sarsa, sopas, at <i>gravy</i></span> kapag nire-reheat.</li>
+                <li><span className='font-bold'>Gamitin ang <i>food thermometer</i></span> upang tiyakin ang kaligtasan ng karne, manok, seafood, at mga produkto ng itlog para sa lahat ng paraan ng pagluluto. Dapat na maluto ang mga pagkain sa tamang <i>minimum</i> na <i>internal</i> na temperatura upang patayin ang mga mapanganib na bakterya tulad ng <i>salmonella</i>. Ito ay isang uri ng bakterya na nagdudulot ng impeksyon sa bituka ng tao, lalo na kapag kumakain ng kontaminadong pagkain.</li>
+                <li><span className='font-bold'>Kapag nagluluto sa <i>microwave oven</i>,</span> takpan ang pagkain, ihalo, at <i>i-rotate</i> para sa pantay na pagluluto. Kung walang <i>turntable</i>, <i>i-rotate</i> ang pinggan ng mano-mano isang beses o dalawang beses sa pagluluto.</li>
+                <li><span className='font-bold'>Pakuluan ang mga sarsa, sopas, at <i>gravy</i></span> kapag <i>nire-reheat</i>.</li>
             </ul>
           </div>
 
           <div className='text-justify w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
             <p className='font-bold'>4. Pagpapalamig ng mga pagkain</p>
             <ul className='pl-12 list-disc grid gap-y-4'>
-                <li><span className='font-bold'>Gumamit ng appliance <i>thermometer</i></span> upang tiyakin na ang temperatura ay laging 40°F o mas mababa at ang freezer ay 0°F o mas mababa.</li>
-                <li><span className='font-bold'>Ilagay agad ang karne, manok, itlog, seafood, at iba pang <i>perishable</i> na pagkain sa refrigerator o freezer</span>  sa loob ng 2 oras mula sa pagluluto o pagbili. I-refrigerate sa loob ng 1 oras kung ang temperatura sa labas ay higit sa 90°F.</li>
-                <li><span className='font-bold'>Huwag i-defrost ang pagkain sa <i>room temperature.</i></span> May tatlong ligtas na paraan upang i-defrost ang pagkain: sa <i>refrigerator</i>, sa malamig na tubig, at sa microwave. Ang pagkain na dinifrost sa malamig na tubig o sa <i>microwave</i> ay dapat lutuin agad.</li>
+                <li><span className='font-bold'>Gumamit ng appliance <i>thermometer</i></span> upang tiyakin na ang temperatura ay laging 40°F o mas mababa at ang <i>freezer</i> ay 0°F o mas mababa.</li>
+                <li><span className='font-bold'>Ilagay agad ang karne, manok, itlog, <i>seafood</i>, at iba pang <i>perishable</i> na pagkain sa refrigerator o freezer</span> sa loob ng 2 oras mula sa pagluluto o pagbili. I-<i>refrigerate</i> sa loob ng 1 oras kung ang temperatura sa labas ay higit sa 90°F.</li>
+                <li><span className='font-bold'>Huwag <i>i-defrost</i> ang pagkain sa <i>room temperature.</i></span> May tatlong ligtas na paraan upang <i>i-defrost</i> ang pagkain: sa <i>refrigerator</i>, sa malamig na tubig, at sa <i>microwave</i>. Ang pagkain na dinifrost sa malamig na tubig o sa <i>microwave</i> ay dapat lutuin agad.</li>
                 <li><span className='font-bold'>Marinate ang pagkain sa <i>refrigerator.</i></span></li>
-                <li><span className='font-bold'>Kung may maraming tirang pagkain hatiin ito</span> at ilagay ito sa isang container para mas mabilis lumamig sa loob ng <i>refrigerator.</i></li>
+                <li><span className='font-bold'>Kung may maraming tirang pagkain hatiin ito</span> at ilagay ito sa isang <i>container</i> para mas mabilis lumamig sa loob ng <i>refrigerator.</i></li>
             </ul>
             <p className='font-bold'>Maaring i-download ang impormasyon tungkol sa food safety dito:</p>
           </div>
