@@ -85,7 +85,7 @@ function FoodSupplement() {
         <div className='text-justify w-[60%] grid gap-2 border-2 border-black py-3 px-4 rounded-lg bg-white sm:w-[80%] md:w-[60%]'>
           <p className='font-bold'>Dapat gumamit ng supplements sa mga sumusunod na pagkakataon:</p>
           <ul className='list-disc pl-5 text-justify grid gap-y-4'>
-            <li><span className='font-bold'>Ferrous Sulfate at Folic Acid</span> ay mga pangunahing bahagi ng mga prenatal vitamins upang maiwasan ang anemia at neural tube defects sa mga sanggol.</li>
+            <li><span className='font-bold'>Ferrous Sulfate at Folic Acid</span> ay mga pangunahing bahagi ng mga prenatal vitamins upang maiwasan ang anemia at <i>neural tube defects</i> sa mga sanggol.</li>
             <li><span className='font-bold'>Calcium Carbonate + Vitamin D3</span> para sa kalusugan ng buto at ngipin ng sanggol at ng ina.</li>
             <li><span className='font-bold'>Multivitamins with Iron</span> ay essential medicine dahil nagbibigay ito ng kumpletong nutrisyon at maiwasan ang komplikasyon.</li>
             <li><span className='font-bold'>Vitamin A</span> para sa <i>immune function</i> at mata ng sanggol.</li>
