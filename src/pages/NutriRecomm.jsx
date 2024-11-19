@@ -107,7 +107,7 @@ function NutriRecomm() {
             <ul className='list-decimal pl-10'>
                 <li>Upang makagawa ng mas maraming dugo</li>
                 <li>Upang mas matatag at maunlad ang sirkulasyon ng dugo ng sanggol</li>
-                <li>Upang mabuo ang amniotic fluid na nakapalibot sa sanggol</li>
+                <li>Upang mabuo ang <i>amniotic fluid</i> na nakapalibot sa sanggol</li>
             </ul>
           </div>
 
